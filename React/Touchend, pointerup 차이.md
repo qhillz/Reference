@@ -1,0 +1,1 @@
+Touchend는 html 엘리먼트 외부에서 벗어나도 계속 시작 엘리먼트가 추종되지만, PointerUp과 같은 경우는 추종되지 않아서 window.onpointerup에 이벤트를 등록해야하는 경우가 발생함. 

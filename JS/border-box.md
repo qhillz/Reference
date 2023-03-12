@@ -1,0 +1,7 @@
+
+
+width height를 설정할 때 padding, border를 고려하게 된다. 
+
+
+
+- `border-box` tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements. `box-sizing: border-box` is the default styling that browsers use for the [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table), [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select), [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select), [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select), and [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button), and [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button) elements, and for [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) elements, and for [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) elements, and for [``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) elements whose type is `radio`, `checkbox`, `reset`, `button`, `submit`, `color`, or `search`.
