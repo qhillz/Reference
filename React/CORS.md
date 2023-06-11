@@ -339,7 +339,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 
 app.use(createProxyMiddleware("/users",{ 
-  target: `https://jsonplaceholder.typicode.com/`, 
+  target: `https://jsonplaceholder.typicode.com`, 
   changeOrigin: true,
 }));
 
@@ -348,13 +348,15 @@ app.listen(3004);
 
 
 
-위의 해당하는 프록시 서버의 주소는 http://localhost:3004가 되고 만약 
+위의 해당하는 프록시 서버의 주소는 http://localhost:3004가 되고 package.json에 proxy를 해당 주소로 설정해준 뒤에 fetch나 axios를 통해서 "/users"를 호출할 경우 target뒤에 주소를 붙여서 호출해주는 방식.
+
+- `createProxyMiddleware('/api', {...})` - matches paths starting with `/api`
 
 
 
 ### **Client**
 
-```javascript
+```react
 import React, { useEffect, useState } from 'react'
 
 function App2(){
@@ -401,6 +403,14 @@ useEffect(()=>{
 
 
 JSON 객체는 JSX문법을 통해 React에서 나타낼 수 없음. 이를 표현하고 싶으면 JSON.stringify(jsoned)를 통해 String화 시켜야된다.
+
+
+
+403 Error ==> Unauthorized
+
+404 Error ==> Not Found
+
+500 Error ==> Internal Server Problem
 
 
 
