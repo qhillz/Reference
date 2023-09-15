@@ -2,7 +2,7 @@
 
 
 
-![image-20230610194842791](C:/Users/qhill/AppData/Roaming/Typora/typora-user-images/image-20230610194842791.png)
+![image-20230610194842791](md-images/image-20230610194842791.png)
 
 two 브랜치를 master에 merge 후의 결과이다. 
 
